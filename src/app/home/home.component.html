@@ -1,0 +1,10 @@
+<h1>Welcome!</h1>
+<p>
+  I'm a full-stack web developer and I built this site to provide a centralized hub of projects, work history, and blog posts, so that people interested in my skills and professional background can view the most relevant information, all in one place. Links to my general GitHub and LinkedIn profiles are at the top of the page, and links to specific GitHub repos can be found on the Projects page.
+</p>
+<a *ngFor="let appTopic of appTopics" href="#{{appTopic.name}}">
+  <div class="app-topic">
+    <h2>{{appTopic.name}}</h2>
+    <p>{{appTopic.description}}</p>
+  </div>
+</a>
