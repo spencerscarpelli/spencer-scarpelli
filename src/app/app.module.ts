@@ -20,7 +20,8 @@ import { RouterModule } from '@angular/router';
     HttpModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'about', component: AboutComponent }
+      { path: 'about', component: AboutComponent },
+      { path: '**', redirectTo: '', pathMatch: 'full' }
     ])
   ],
   providers: [DataService],
