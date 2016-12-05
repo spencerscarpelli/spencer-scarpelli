@@ -3,11 +3,11 @@ import { AppTopic } from './appTopic';
 export const APPTOPICS: AppTopic[] = [
   {
     "name": "About",
-    "description": "Here you'll find my resume, as well as a brief bio"
+    "description": "Background, resume, etc."
   },
   {
     "name": "Projects",
-    "description": "A collection of notable projects, with links to their GitHub repos"
+    "description": "Descriptions and screenshots of some notable projects"
   },
   {
     "name": "Blog",
