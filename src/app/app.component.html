@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Welcome!</h1>
+<p>
+  I'm a full-stack web developer and I built this site to provide a centralized hub of projects, work history, and blog posts. This centralization has two benefits: people interested in my professional background can view the most relevant information consolidated in one place, and I can reinforce the things I've learned through the process of organizing and writing.
+</p>
+<div class="app-topic" *ngFor='let appTopic of appTopics'>
+  <h2>{{appTopic.name}}</h2>
+  <p>{{appTopic.description}}</p>
+</div>
