@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppTopic } from './appTopic';
+import { AppTopic } from './AppTopic';
 import { HttpModule } from '@angular/http';
 import { DataService } from './data.service';
 

@@ -1,0 +1,16 @@
+<div class="left-panel">
+  <div *ngFor="let cat of categories" (click)="selectCategory(cat)" class="left-panel-tab">
+    <h3>{{cat}}</h3>
+  </div>
+</div>
+<section class="blog-section">
+  <div *ngFor="let post of blogPosts" class="blog-detail">
+    <div *ngIf="post.category == selectedCategory" class="blog-detail">
+      <h2>{{post.title}}</h2>
+      <h6>{{post.date}}</h6>
+      <p>
+        {{post.content}}
+      </p>
+    </div>
+  </div>
+</section>

@@ -16,3 +16,11 @@ p {
 h4 {
   margin: .5%;
 }
+
+.left-panel {
+  background-color: green;
+}
+
+.left-panel-tab:hover {
+  cursor: pointer;
+}
