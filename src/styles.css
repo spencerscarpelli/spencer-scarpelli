@@ -4,3 +4,15 @@ a, a:hover, a:visited {
   text-decoration: none;
   color: inherit;
 }
+
+* {
+  font-family: Verdana, sans-serif;
+}
+
+p {
+  font-family: Times, serif;
+}
+
+h4 {
+  margin: .5%;
+}
