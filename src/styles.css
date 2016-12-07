@@ -1,16 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
 a, a:hover, a:visited {
   text-decoration: none;
   color: inherit;
 }
 
-* {
-  font-family: Verdana, sans-serif;
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
 }
 
-p {
-  font-family: Times, serif;
+body {
+  background: linear-gradient(to right corner, #060C54, #6DFF2D);
 }
 
 h4 {
@@ -23,4 +27,33 @@ h4 {
 
 .left-panel-tab:hover {
   cursor: pointer;
+}
+
+.main-banner {
+  height: 5rem;
+  background-color: #DF4C00;
+}
+
+.banner-name {
+  display: inline;
+  color: white;
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  line-height: 5rem;
+  /*position: relative;*/
+  margin: 3rem;
+  /*top: 20px;*/
+  letter-spacing: 3px;
+}
+
+.banner-nav {
+  display: inline;
+}
+
+.link-to-external {
+  display: inline;
+}
+
+.banner-nav-tab {
+  display: inline;
 }
