@@ -35,25 +35,25 @@ h4 {
 }
 
 .banner-name {
-  display: inline;
+  display: inline-block;
   color: white;
   font-family: "Catamaran", Helvetica, Arial, sans-serif;
   font-size: 2.5rem;
-  line-height: 5rem;
-  margin: 3rem;
   letter-spacing: 3px;
+  margin-left: 2%;
 }
 
 .banner-nav {
-  display: inline;
-}
-
-.link-to-external {
-  display: inline;
+  display: inline-block;
+  margin-left: 30px;
+  line-height:
 }
 
 .banner-nav-tab {
-  display: inline;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: white;
+  margin: 2rem;
 }
 
 .link, .link:hover, .link:visited {
@@ -61,6 +61,16 @@ h4 {
   text-decoration: underline;
 }
 
-g:hover {
-  cursor: pointer;
+.external-links-container {
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+}
+
+.svg-box {
+  display: inline;
+}
+
+footer {
+  font-size: 75%;
 }
