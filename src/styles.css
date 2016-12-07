@@ -13,10 +13,6 @@ p {
   line-height: 1.5rem;
 }
 
-body {
-  background: linear-gradient(to right corner, #060C54, #6DFF2D);
-}
-
 h4 {
   margin: .5%;
 }
@@ -29,31 +25,47 @@ h4 {
   cursor: pointer;
 }
 
-.main-banner {
-  height: 5rem;
-  background-color: #DF4C00;
+.banner {
+  height: 80px;
+  width: 100%;
+  background-color: #290E00;
 }
 
 .banner-name {
+  position: absolute;
+  height: 80px;
   display: inline-block;
   color: white;
+  font-size: 2rem;
+  letter-spacing: .25rem;
+  line-height: 2.5;
+  margin-left: 50px;
+}
+
+.name {
   font-family: "Catamaran", Helvetica, Arial, sans-serif;
-  font-size: 2.5rem;
-  letter-spacing: 3px;
-  margin-left: 2%;
 }
 
 .banner-nav {
+  height: 80px;
   display: inline-block;
-  margin-left: 30px;
-  line-height:
+  margin-left: 40%;
+  line-height: 5;
 }
 
 .banner-nav-tab {
+  height: 80px;
+  width: 9rem;
+  text-align: center;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
-  margin: 2rem;
+  transition: background-color 0.2s ease;
+}
+
+.banner-nav-tab:hover {
+  background-color: #3B1400;
+  transition: background-color 0.2s ease;
 }
 
 .link, .link:hover, .link:visited {
@@ -62,15 +74,17 @@ h4 {
 }
 
 .external-links-container {
-  display: inline-block;
   float: right;
-  margin-right: 5%;
+  margin-right: .7rem;
+  display: inline-block;
+  padding-top: 1.2rem;
 }
 
 .svg-box {
   display: inline;
+  margin: .7rem;
 }
 
 footer {
-  font-size: 75%;
+  font-size: .7rem;
 }
