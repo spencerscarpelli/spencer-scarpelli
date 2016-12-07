@@ -60,12 +60,12 @@ h4 {
   display: inline-block;
   font-size: 1rem;
   color: white;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.1s ease;
 }
 
 .banner-nav-tab:hover {
   background-color: #3B1400;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.1s ease;
 }
 
 .link, .link:hover, .link:visited {
