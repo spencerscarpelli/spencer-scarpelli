@@ -6,6 +6,7 @@ h1 {
 
 h1, h2 {
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
 }
 
 .intro-section {
@@ -32,6 +33,10 @@ h1, h2 {
   text-align: center;
   transition: background-color 0.1s ease;
   border-radius: 5px;
+}
+
+.app-topic > p {
+  padding-top: 10px;
 }
 
 .app-topic:hover {

@@ -17,9 +17,9 @@ h4 {
   margin: .5%;
 }
 
-.left-panel {
+/*.left-panel {
   background-color: green;
-}
+}*/
 
 .left-panel-tab:hover {
   cursor: pointer;
@@ -28,13 +28,13 @@ h4 {
 .banner {
   height: 80px;
   width: 100%;
-  background-color: #290E00;
+  /*background-color: #290E00;*/
 }
 
 .sub-banner {
   height: 10px;
   width: 100%;
-  background-color: #00DF7F;
+  /*background-color: #00DF7F;*/
 }
 
 .banner-name {
@@ -43,7 +43,7 @@ h4 {
   display: inline-block;
   color: white;
   font-size: 2rem;
-  letter-spacing: .25rem;
+  letter-spacing: 4px;
   line-height: 2.5;
   margin-left: 50px;
 }
@@ -62,15 +62,16 @@ h4 {
   height: 80px;
   width: 10rem;
   text-align: center;
+  letter-spacing: 1px;
   display: inline-block;
   font-size: 1.5rem;
-  color: #00DF7F;
+  /*color: #00DF7F;*/
   transition: background-color 0.1s ease;
   line-height: 6;
 }
 
 .banner-nav-tab:hover {
-  background-color: #3B1400;
+  background-color: #5A918D;
   transition: background-color 0.1s ease;
 }
 
@@ -104,4 +105,28 @@ footer {
 
 footer > p {
   line-height: 1.4;
+}
+
+.text1 {
+  color: #558A86;
+}
+
+.text2 {
+  color: #A63E14;
+}
+
+.text3 {
+  color: #BFBABE;
+}
+
+.bg1 {
+  background-color: #558A86;
+}
+
+.bg2 {
+  background-color: #A63E14;
+}
+
+.bg3 {
+  background-color: #BFBABE;
 }
