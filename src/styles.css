@@ -40,9 +40,7 @@ h4 {
   font-family: "Catamaran", Helvetica, Arial, sans-serif;
   font-size: 2.5rem;
   line-height: 5rem;
-  /*position: relative;*/
   margin: 3rem;
-  /*top: 20px;*/
   letter-spacing: 3px;
 }
 
@@ -56,4 +54,13 @@ h4 {
 
 .banner-nav-tab {
   display: inline;
+}
+
+.link, .link:hover, .link:visited {
+  color: blue;
+  text-decoration: underline;
+}
+
+g:hover {
+  cursor: pointer;
 }
