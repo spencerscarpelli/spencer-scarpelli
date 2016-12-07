@@ -56,12 +56,11 @@ h4 {
   height: 80px;
   display: inline-block;
   margin-left: 40%;
-  /*line-height: 5;*/
 }
 
 .banner-nav-tab {
   height: 80px;
-  width: 9rem;
+  width: 10rem;
   text-align: center;
   display: inline-block;
   font-size: 1.5rem;
@@ -81,11 +80,11 @@ h4 {
 }
 
 .external-links-container {
+  position: absolute;
+  right: .7rem;
   height: 80px;
-  float: right;
   margin-right: .7rem;
   display: inline-block;
-  /*padding-top: 1.2rem;*/
   line-height: 7;
 }
 
@@ -95,5 +94,14 @@ h4 {
 }
 
 footer {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  margin-top: 40px;
   font-size: .7rem;
+  text-align: center;
+}
+
+footer > p {
+  line-height: 1.4;
 }

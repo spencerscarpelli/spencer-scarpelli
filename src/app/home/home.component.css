@@ -1,0 +1,47 @@
+h1 {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.intro-section {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid lightgray;
+  min-width: 500px;
+}
+
+.app-topic-section {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.app-topic {
+  vertical-align: top;
+  height: 80px;
+  width: 15rem;
+  padding: 2rem;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.1s ease;
+  border-radius: 5px;
+}
+
+.app-topic:hover {
+  background-color: #FAFAFA;
+  transition: background-color 0.1s ease;
+}
+
+.app-topic-border {
+  display: inline-block;
+  height: 145px;
+  width: 1px;
+  border-right: 1px solid lightgray;
+}
