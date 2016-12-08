@@ -9,6 +9,10 @@ h1, h2 {
   letter-spacing: 2px;
 }
 
+.filler {
+  height: 10vw;
+}
+
 .intro-section {
   width: 50%;
   text-align: center;

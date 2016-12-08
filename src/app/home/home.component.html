@@ -1,15 +1,18 @@
-<h1 class="text3">Welcome</h1>
-<div class="intro-section">
-  <p>
-    I'm a full-stack web developer and I built this site to provide a centralized hub of projects, work history, and blog posts, so that people interested in my skills and professional background can view the most relevant information, all in one place. Links to my general GitHub and LinkedIn profiles are in the upper right-hand corner, and links to specific GitHub repos can be found on the Projects page.
-  </p>
+<div class="container">
+  <h1 class="text3">Welcome</h1>
+  <div class="intro-section">
+    <p>
+      I'm a full-stack web developer and I built this site to centralize my projects, work history, and blog posts, so that people interested in my skills and professional background can view the most relevant information, all in one place. Links to my general GitHub and LinkedIn profiles are in the upper right-hand corner, and links to specific GitHub repos can be found on the Projects page.
+    </p>
+  </div>
+  <section class="app-topic-section">
+    <a *ngFor="let appTopic of appTopics" href="{{appTopic.name | lowercase}}">
+      <div class="app-topic">
+        <h2 class="text2">{{appTopic.name}}</h2>
+        <p>{{appTopic.description}}</p>
+      </div>
+      <div *ngIf="appTopic != appTopics[appTopics.length - 1]" class="app-topic-border"></div>
+    </a>
+  </section>
+  <div class="filler"></div>
 </div>
-<section class="app-topic-section">
-  <a *ngFor="let appTopic of appTopics" href="{{appTopic.name | lowercase}}">
-    <div class="app-topic">
-      <h2 class="text2">{{appTopic.name}}</h2>
-      <p>{{appTopic.description}}</p>
-    </div>
-    <div *ngIf="appTopic != appTopics[appTopics.length - 1]" class="app-topic-border"></div>
-  </a>
-</section>

@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 a, a:hover, a:visited {
   text-decoration: none;
   color: inherit;
@@ -28,13 +32,11 @@ h4 {
 .banner {
   height: 70px;
   width: 100%;
-  /*background-color: #290E00;*/
 }
 
 .eye-logo {
   background-image: url("/assets/images/eye-logo.png");
   position: absolute;
-  /*outline: 3px solid blue;*/
   display: inline-block;
   height: 45px;
   width: 45px;
@@ -46,7 +48,6 @@ h4 {
 .sub-banner {
   height: 10px;
   width: 100%;
-  /*background-color: #00DF7F;*/
 }
 
 .banner-name {
@@ -76,7 +77,6 @@ h4 {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.5rem;
-  /*color: #00DF7F;*/
   transition: background-color .1s ease;
   line-height: 5.2;
 }
@@ -106,10 +106,10 @@ h4 {
 }
 
 footer {
+  height: 45px;
   width: 100%;
-  margin-top: 40px;
-  position: absolute;
-  bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
   font-size: .7rem;
   text-align: center;
 }
