@@ -31,6 +31,18 @@ h4 {
   /*background-color: #290E00;*/
 }
 
+.eye-logo {
+  background-image: url("/assets/images/eye-logo.png");
+  position: absolute;
+  /*outline: 3px solid blue;*/
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  margin-left: 20px;
+  margin-top: 12px;
+  border-radius: 5px;
+}
+
 .sub-banner {
   height: 10px;
   width: 100%;
@@ -45,7 +57,7 @@ h4 {
   font-size: 2rem;
   letter-spacing: 4px;
   line-height: 2.3;
-  margin-left: 50px;
+  margin-left: 85px;
 }
 
 .name {
