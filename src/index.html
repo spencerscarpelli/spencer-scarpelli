@@ -1,56 +1,22 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Spencer Scarpelli</title>
-  <base href="/">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <section class="banner bg1">
-    <div class="eye-logo"></div>
-    <div class="banner-name">
-      <a class="name" href="#">SPENCER SCARPELLI</a>
-    </div>
-    <div class="banner-nav">
-      <nav>
-        <a href="about">
-          <div class="banner-nav-tab text3">ABOUT</div>
-        </a>
-        <a href="projects">
-          <div class="banner-nav-tab text3">PROJECTS</div>
-        </a>
-        <a href="blog">
-          <div class="banner-nav-tab text3">BLOG</div>
-        </a>
-      </nav>
-    </div>
-    <div class="external-links-container">
-      <div class="svg-box">
-        <a href="https://github.com/spencerscarpelli" target="_blank">
-          <embed type="image/svg+xml" src="/assets/svg/github-logo.svg" width="40" height="40">
-        </a>
-      </div>
-      <div class="svg-box">
-        <a href="#">
-          <embed type="image/svg+xml" src="/assets/svg/linkedin.svg" width="40" height="40">
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="sub-banner bg3"></section>
-  <app-root></app-root>
-  <footer class="footer">
-    <p>Copyright © 2016 Spencer Scarpelli</p>
-    <p>
-      GitHub logo formatted in SVG by <a href="http://www.flaticon.com/authors/dave-gandy" target="_blank" class="link">Dave Gandy</a> from Flaticon
-    </p>
-    <p>
-      LinkedIn logo formatted in SVG by <a href="http://www.flaticon.com/authors/freepik" target="_blank" class="link">Freepik</a> from Flaticon
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Spencer Scarpelli</title>
+    <base href="/">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+
+    <app-root></app-root>
+
+  </body>
+  <script type="text/javascript">
+    let year = document.getElementById('current-year');
+    let date = new Date();
+    year.innerText = date.getFullYear();
+  </script>
 </html>

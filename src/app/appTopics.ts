@@ -3,7 +3,7 @@ import { AppTopic } from './AppTopic';
 export const APPTOPICS: AppTopic[] = [
   {
     name: "About",
-    description: "Background, resume, etc."
+    description: "Background & resume"
   },
   {
     name: "Projects",

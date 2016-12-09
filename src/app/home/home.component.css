@@ -47,7 +47,7 @@ h1, h2 {
   background-color: #FAFAFA;
 }
 
-.app-topic-border {
+.separator {
   display: inline-block;
   height: 145px;
   width: 1px;

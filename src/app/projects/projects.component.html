@@ -1,17 +1,22 @@
-<div class="left-panel">
-  <div *ngFor="let project of projects" (click)="selectProject(project)" class="left-panel-tab">
-    <h3>{{project.name}}</h3>
+<div class="container">
+  <div class="left-panel">
+    <div *ngFor="let project of projects" (click)="selectProject(project)">
+      <div class="left-panel-tab">
+        <h3 class="text2">{{project.name}}</h3>
+      </div>
+      <div *ngIf="project != projects[projects.length - 1]" class="separator"></div>
+    </div>
   </div>
+  <section class="display-section">
+    <div class="display-detail">
+      <h1 class="text3">{{selectedProject.name}}</h1>
+      <p>
+        <strong>Description: </strong>{{selectedProject.description}}
+      </p>
+      <p>
+        <strong>Technologies Used: </strong>{{selectedProject.technologies}}
+      </p>
+      <img src="{{selectedProject.screenshots[0]}}" alt="A screenshot of the {{selectedProject.name}} application" />
+    </div>
+  </section>
 </div>
-<section class="project-section">
-  <div class="project-detail">
-    <h2>{{selectedProject.name}}</h2>
-    <p>
-      <strong>Description: </strong>{{selectedProject.description}}
-    </p>
-    <p>
-      <strong>Technologies Used: </strong>{{selectedProject.technologies}}
-    </p>
-    <img src="{{selectedProject.screenshots[0]}}" alt="A screenshot of the {{selectedProject.name}} application" />
-  </div>
-</section>
