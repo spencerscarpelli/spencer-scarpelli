@@ -14,8 +14,8 @@ export class ProjectsComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.projects = this.dataService.getProjects();
-    this.selectedProject = this.projects[this.projects.length - 1];
+    this.projects = this.dataService.getProjects().reverse();
+    this.selectedProject = this.projects[0];
   }
 
   selectProject(project) {

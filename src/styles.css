@@ -52,6 +52,12 @@ h4 {
 .display-detail > h1 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.display-detail > p {
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .left-panel-tab > h3 {

@@ -10,11 +10,13 @@
   <section class="display-section">
     <div class="display-detail">
       <h1 class="text3">{{selectedProject.name}}</h1>
+      <strong>Description</strong>
       <p>
-        <strong>Description: </strong>{{selectedProject.description}}
+        {{selectedProject.description}}
       </p>
+      <strong>Technologies Used</strong>
       <p>
-        <strong>Technologies Used: </strong>{{selectedProject.technologies}}
+        {{selectedProject.technologies}}
       </p>
       <img src="{{selectedProject.screenshots[0]}}" alt="A screenshot of the {{selectedProject.name}} application" />
     </div>
