@@ -40,7 +40,7 @@ h4 {
 }
 
 .left-panel-tab:hover {
-  background-color: #FAFAFA;
+  background-color: #E5DFE4;
 }
 
 .display-section {
@@ -118,11 +118,11 @@ h4 {
 .nav-pointer {
   position: relative;
   top: -54px;
-  height: 5px;
-  /*width: 10px;*/
+  height: 4px;
   background-color: #558A86;
   margin: auto;
-  /*transform: rotate(45deg);*/
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 .banner-nav-tab:hover {
