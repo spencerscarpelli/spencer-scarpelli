@@ -6,13 +6,22 @@
   <div class="banner-nav">
     <nav>
       <a href="about">
-        <div class="banner-nav-tab text3">ABOUT</div>
+        <div class="banner-nav-tab text3">
+          ABOUT
+          <div *ngIf="currentPage == '/about'" class="nav-pointer"></div>
+        </div>
       </a>
       <a href="projects">
-        <div class="banner-nav-tab text3">PROJECTS</div>
+        <div class="banner-nav-tab text3">
+          PROJECTS
+          <div *ngIf="currentPage == '/projects'" class="nav-pointer"></div>
+        </div>
       </a>
       <a href="blog">
-        <div class="banner-nav-tab text3">BLOG</div>
+        <div class="banner-nav-tab text3">
+          BLOG
+          <div *ngIf="currentPage == '/blog'" class="nav-pointer"></div>
+        </div>
       </a>
     </nav>
   </div>

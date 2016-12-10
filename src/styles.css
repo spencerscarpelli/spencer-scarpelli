@@ -115,6 +115,16 @@ h4 {
   line-height: 5.2;
 }
 
+.nav-pointer {
+  position: relative;
+  top: -54px;
+  height: 5px;
+  /*width: 10px;*/
+  background-color: #558A86;
+  margin: auto;
+  /*transform: rotate(45deg);*/
+}
+
 .banner-nav-tab:hover {
   background-color: #5A918D;
   color: #00335C;

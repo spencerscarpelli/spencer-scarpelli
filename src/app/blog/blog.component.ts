@@ -22,4 +22,5 @@ export class BlogComponent implements OnInit {
   selectCategory(category) {
     this.selectedCategory = category;
   }
+
 }

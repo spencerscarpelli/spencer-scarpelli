@@ -21,4 +21,5 @@ export class ProjectsComponent implements OnInit {
   selectProject(project) {
     this.selectedProject = project;
   }
+
 }
