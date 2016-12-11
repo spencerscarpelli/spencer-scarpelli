@@ -10,15 +10,15 @@
   <section class="display-section">
     <div class="display-detail">
       <h1 class="text3">{{selectedProject.name}}</h1>
-      <strong>Description</strong>
+      <strong class="text3">Description</strong>
       <p>
         {{selectedProject.description}}
       </p>
-      <strong>Technologies Used</strong>
+      <strong class="text3">Technologies Used</strong>
       <p>
         {{selectedProject.technologies}}
       </p>
-      <img src="{{selectedProject.screenshots[0]}}" alt="A screenshot of the {{selectedProject.name}} application" />
+      <img *ngFor="let ss of selectedProject.screenshots" src="{{ss}}" alt="A screenshot of the {{selectedProject.name}} application" />
     </div>
   </section>
 </div>

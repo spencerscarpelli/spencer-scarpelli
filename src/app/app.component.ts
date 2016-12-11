@@ -19,7 +19,6 @@ export class AppComponent {
 
   constructor(private dataService: DataService, private location: Location) {
     this.currentPage = location.path();
-    console.log(this.currentPage);
   }
 
   ngOnInit() {

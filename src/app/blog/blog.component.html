@@ -1,16 +1,22 @@
-<div class="left-panel">
-  <div *ngFor="let cat of categories" (click)="selectCategory(cat)" class="left-panel-tab">
-    <h3>{{cat}}</h3>
-  </div>
-</div>
-<section class="display-section">
-  <div *ngFor="let post of blogPosts" class="display-detail">
-    <div *ngIf="post.category == selectedCategory" class="blog-detail">
-      <h2>{{post.title}}</h2>
-      <h6>{{post.date}}</h6>
-      <p>
-        {{post.content}}
-      </p>
+<div class="container">
+  <div class="left-panel">
+    <div *ngFor="let cat of categories" (click)="selectCategory(cat)">
+      <div class="left-panel-tab">
+        <h3 class="text2">{{cat}}</h3>
+      </div>
+      <div *ngIf="cat != categories[categories.length - 1]" class="separator"></div>
     </div>
   </div>
-</section>
+  <section class="display-section">
+    <div *ngFor="let post of blogPosts" class="display-detail">
+      <div *ngIf="post.category == selectedCategory || selectedCategory == 'All'" class="blog-detail">
+        <p class="date">{{post.date | date:"yMMMMd"}}</p>
+        <h1 class="text3">{{post.title}}</h1>
+        <p>
+          {{post.content}}
+        </p>
+        <img class="s-logo" src="/assets/images/favicon.png" alt="Double S logo">
+      </div>
+    </div>
+  </section>
+</div>

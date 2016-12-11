@@ -9,14 +9,14 @@ import { BlogPost } from './BlogPost';
 })
 export class BlogComponent implements OnInit {
   blogPosts: BlogPost[];
-  categories = ['Coding', 'Reads', 'Music', 'Other'];
+  categories = ['All', 'Coding', 'Reads', 'Music', 'Other'];
   selectedCategory: string;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.blogPosts = this.dataService.getBlogPosts();
-    this.selectedCategory = 'Coding';
+    this.selectedCategory = 'All';
   }
 
   selectCategory(category) {

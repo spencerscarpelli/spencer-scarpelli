@@ -1,3 +1,9 @@
+.date {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #FBAE17;
+}
+
 .container {
   margin: auto;
   padding-bottom: 30px;
@@ -11,4 +17,18 @@
   margin: auto;
   margin-top: 2px;
   margin-bottom: 2px;
+}
+
+.blog-detail {
+  margin-bottom: 50px;
+}
+
+.blog-detail > h1 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.s-logo {
+  margin-top: 10px;
 }
