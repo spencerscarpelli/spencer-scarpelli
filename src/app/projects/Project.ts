@@ -4,4 +4,5 @@ export class Project {
   description: string;
   technologies: string;
   screenshots: string[];
+  gitHubUrl: string;
 }

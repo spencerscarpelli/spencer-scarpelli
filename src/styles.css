@@ -126,12 +126,8 @@ h4 {
   line-height: 5.2;
 }
 
-.nav-pointer {
-  position: relative;
-  top: -54px;
-  height: 4px;
-  background-color: #558A86;
-  margin: auto;
+.nav-selected {
+  height: 74px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }

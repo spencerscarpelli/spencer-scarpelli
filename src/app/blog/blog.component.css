@@ -21,6 +21,7 @@
 
 .blog-detail {
   margin-bottom: 50px;
+  max-width: 70%;
 }
 
 .blog-detail > h1 {

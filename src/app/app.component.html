@@ -1,26 +1,25 @@
 <section class="banner bg1">
-  <div class="eye-logo"></div>
+  <a href="#">
+    <div class="eye-logo"></div>
+  </a>
   <div class="banner-name">
     <a class="name" href="#">SPENCER SCARPELLI</a>
   </div>
   <div class="banner-nav">
     <nav>
       <a href="about">
-        <div class="banner-nav-tab text3">
+        <div class="banner-nav-tab text3 bg1" [class.nav-selected]="currentPage == '/about'">
           ABOUT
-          <div *ngIf="currentPage == '/about'" class="nav-pointer"></div>
         </div>
       </a>
       <a href="projects">
-        <div class="banner-nav-tab text3">
+        <div class="banner-nav-tab text3 bg1" [class.nav-selected]="currentPage == '/projects'">
           PROJECTS
-          <div *ngIf="currentPage == '/projects'" class="nav-pointer"></div>
         </div>
       </a>
       <a href="blog">
-        <div class="banner-nav-tab text3">
+        <div class="banner-nav-tab text3 bg1" [class.nav-selected]="currentPage == '/blog'">
           BLOG
-          <div *ngIf="currentPage == '/blog'" class="nav-pointer"></div>
         </div>
       </a>
     </nav>
