@@ -9,7 +9,9 @@
   </div>
   <section class="display-section">
     <div class="display-detail">
-      <h1 class="text3">{{selectedProject.name}}</h1>
+      <a href={{selectedProject.deploymentUrl}} target="_blank">
+        <h1 class="text3">{{selectedProject.name}}</h1>
+      </a>
       <a href={{selectedProject.gitHubUrl}} target="_blank">
         <img class="github-repo-link" src="/assets/images/github-logo.png" alt="GitHub logo">
       </a>

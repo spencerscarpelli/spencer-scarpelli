@@ -5,4 +5,5 @@ export class Project {
   technologies: string;
   screenshots: string[];
   gitHubUrl: string;
+  deploymentUrl: string;
 }

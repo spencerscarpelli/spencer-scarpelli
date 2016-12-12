@@ -55,6 +55,12 @@ h4 {
   margin-bottom: 20px;
 }
 
+.display-detail > a > h1 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
 .display-detail > p {
   margin-top: 5px;
   margin-bottom: 20px;
