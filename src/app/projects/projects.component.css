@@ -37,3 +37,27 @@
   position: relative;
   top: 8px;
 }
+
+.no-deployment {
+  display: inline-block;
+}
+
+.no-deployment > h1 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.no-deployment-popup {
+  height: 50px;
+  padding-right: 20px;
+  position: absolute;
+  margin-top: -20px;
+  color: white;
+  font-size: 12px;
+  transition: color .2s ease;
+}
+
+.no-deployment-popup:hover {
+  color: lightgray;
+}

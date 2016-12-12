@@ -9,9 +9,15 @@
   </div>
   <section class="display-section">
     <div class="display-detail">
-      <a href={{selectedProject.deploymentUrl}} target="_blank">
+      <a *ngIf="selectedProject.deploymentUrl != ''" href={{selectedProject.deploymentUrl}} target="_blank">
         <h1 class="text3">{{selectedProject.name}}</h1>
       </a>
+      <div *ngIf="selectedProject.deploymentUrl == ''" class="no-deployment">
+        <div class="no-deployment-popup">
+          <p>(This project isn't deployed)</p>
+        </div>
+        <h1 class="text3">{{selectedProject.name}}</h1>
+      </div>
       <a href={{selectedProject.gitHubUrl}} target="_blank">
         <img class="github-repo-link" src="/assets/images/github-logo.png" alt="GitHub logo">
       </a>

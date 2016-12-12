@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
   {
     id: 3,
     name: 'Angular Shopping Cart',
-    description: 'An AngularJS 1 exercise, the goal was to build a shopping cart single-page application with a shared service across components. Users can use filter/search options to find the desired product, then add a certain quantity to their shopping bag and proceed to the checkout view, which displays the order total and each item with quantity and subtotal. They can then remove or edit the quantity of each item in their shopping cart.',
+    description: 'An AngularJS 1 exercise (I have since moved on to Angular 2), the goal was to build a single-page shopping cart application with a shared service across components. Users can use filter/search options to find the desired product, then add a certain quantity to their shopping bag and proceed to the checkout view, which displays the order total and each item with quantity and subtotal. They can then remove or edit the quantity of each item in their shopping cart.',
     technologies: 'AngularJS 1, JSON, HTML, CSS',
     screenshots: [
       '/assets/images/shopping-cart-1.png',
@@ -42,6 +42,20 @@ export const PROJECTS: Project[] = [
     ],
     gitHubUrl: 'https://github.com/spencerscarpelli/angular-shopping-cart-app',
     deploymentUrl: 'http://military-dog.surge.sh/'
+  },
+  {
+    id: 4,
+    name: 'SommBuddy',
+    description: 'An AngularJS 1 exercise (I have since moved on to Angular 2), the goal was to build a single-page shopping cart application with a shared service across components. Users can use filter/search options to find the desired product, then add a certain quantity to their shopping bag and proceed to the checkout view, which displays the order total and each item with quantity and subtotal. They can then remove or edit the quantity of each item in their shopping cart.',
+    technologies: 'AngularJS 1, JSON, HTML, CSS',
+    screenshots: [
+      '/assets/images/shopping-cart-1.png',
+      '/assets/images/shopping-cart-2.png',
+      '/assets/images/shopping-cart-3.png',
+      '/assets/images/shopping-cart-4.png'
+    ],
+    gitHubUrl: 'https://github.com/discoverychannel/sommbuddy-server',
+    deploymentUrl: ''
   }
 ]
 
