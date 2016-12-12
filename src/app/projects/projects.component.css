@@ -53,11 +53,12 @@
   padding-right: 20px;
   position: absolute;
   margin-top: -20px;
-  color: white;
   font-size: 12px;
-  transition: color .2s ease;
+  color: lightgray;
+  opacity: 0;
+  transition: opacity .2s ease;
 }
 
 .no-deployment-popup:hover {
-  color: lightgray;
+  opacity: 1;
 }
