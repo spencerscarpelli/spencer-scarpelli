@@ -18,7 +18,10 @@ export const PROJECTS: Project[] = [
     description: 'A web application that pulls tweets based on a user\'s hashtag search query. The tweets are given a score based on a sentiment analysis algorithm, and are visualized in charts. The user can hover over each node in the chart to read the tweet. The user can then save that search in a board to revisit later. The user can register in the application or with GitHub OAuth.',
     technologies: 'Node.js, Express.js, Python, d3.js, PostgreSQL, Knex, Twitter API, Jade/Pug',
     screenshots: [
-      '/assets/images/in-other-words.png'
+      '/assets/images/twitter-sa-1.png',
+      '/assets/images/twitter-sa-2.png',
+      '/assets/images/twitter-sa-3.png',
+      '/assets/images/twitter-sa-4.png'
     ],
     gitHubUrl: 'https://github.com/spencerscarpelli/Twitter_Sentiment_Analysis',
     deploymentUrl: 'https://shrouded-refuge-87693.herokuapp.com/'

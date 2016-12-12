@@ -1,5 +1,8 @@
-img {
-  height: 250px;
+.screenshot {
+  height: 300px;
+  box-shadow: 2px 2px 20px gray;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .container {
@@ -18,7 +21,7 @@ img {
 }
 
 .display-detail {
-  max-width: 90%;
+  max-width: 85%;
   padding-bottom: 60px;
   border-bottom: 1px solid lightgray;
 }

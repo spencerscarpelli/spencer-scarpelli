@@ -58,17 +58,12 @@ h4 {
 .display-detail > a > h1 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .display-detail > p {
   margin-top: 5px;
   margin-bottom: 20px;
-}
-
-.display-detail > img {
-  margin-right: 20px;
-  border: 1px solid lightgray;
 }
 
 .left-panel-tab > h3 {
