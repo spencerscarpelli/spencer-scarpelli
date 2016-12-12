@@ -49,21 +49,19 @@ h4 {
   margin-right: 40px;
 }
 
-.display-detail > h1 {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-
 .display-detail > a > h1 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
+}
+
+.display-detail > strong {
+  display: block;
+  margin-top: 20px;
 }
 
 .display-detail > p {
   margin-top: 5px;
-  margin-bottom: 20px;
 }
 
 .left-panel-tab > h3 {

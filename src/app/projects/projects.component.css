@@ -1,8 +1,9 @@
 .screenshot {
-  height: 300px;
+  width: 100%;
+  max-height: 500px;
   box-shadow: 2px 2px 20px gray;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 .container {
