@@ -44,6 +44,7 @@ h4 {
 }
 
 .display-section {
+  min-width: 60%;
   display: inline-block;
   margin-left: 323px;
   margin-right: 40px;
@@ -111,7 +112,7 @@ h4 {
 
 .banner-nav {
   display: inline-block;
-  margin-left: 40%;
+  margin-left: 37%;
 }
 
 .banner-nav-tab {
