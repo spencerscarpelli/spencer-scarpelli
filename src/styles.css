@@ -77,6 +77,7 @@ h4 {
 .banner {
   height: 70px;
   width: 100%;
+  box-shadow: 0px 12px 12px gray;
 }
 
 .eye-logo {
@@ -130,6 +131,7 @@ h4 {
   height: 74px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  /*box-shadow: inset 0px 0px 12px #406966;*/
 }
 
 .banner-nav-tab:hover {
