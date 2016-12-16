@@ -17,7 +17,7 @@ export class ProjectsComponent implements OnInit {
     this.projects = this.dataService.projects.reverse();
     setTimeout(() => {
       this.selectedProject = this.projects[0];
-    }, 10);
+    }, 100);
   }
 
   selectProject(project) {

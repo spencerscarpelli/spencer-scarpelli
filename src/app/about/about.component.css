@@ -20,8 +20,15 @@ h4 {
 
 p {
   margin-top: 10px;
+}
+
+.final-paragraph {
   padding-bottom: 30px;
   border-bottom: 1px solid lightgray;
+}
+
+.final-paragraph a {
+  color: blue;
 }
 
 .container {
