@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    console.log(this.dataService.getProjects());
     this.appTopics = this.dataService.getTopics();
   }
 

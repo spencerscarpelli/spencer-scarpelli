@@ -15,8 +15,8 @@ export class BlogComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.blogPosts = this.dataService.getBlogPosts();
-    this.selectedCategory = 'All';
+    // this.blogPosts = this.dataService.getPosts();
+    // this.selectedCategory = 'All';
   }
 
   selectCategory(category) {

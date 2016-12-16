@@ -8,7 +8,7 @@ import { DataService } from '../data.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  projects;
+  projects: Project[];
   selectedProject: Project;
 
   constructor(private dataService: DataService) { }
@@ -16,11 +16,6 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
     // this.projects = this.dataService.getProjects().reverse();
     // this.selectedProject = this.projects[0];
-    this.dataService.getProjects()
-      .subscribe(projects => {
-        this.projects = projects;
-        console.log(projects);
-      });
   }
 
   selectProject(project) {
