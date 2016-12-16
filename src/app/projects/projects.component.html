@@ -2,35 +2,35 @@
   <div class="left-panel">
     <div *ngFor="let project of projects" (click)="selectProject(project)">
       <div class="left-panel-tab">
-        <h3 class="text2">{{project.name}}</h3>
+        <h3 class="text2">{{project?.name}}</h3>
       </div>
       <div *ngIf="project != projects[projects.length - 1]" class="separator"></div>
     </div>
   </div>
   <section class="display-section">
     <div class="display-detail">
-      <a *ngIf="selectedProject.deploymentUrl != ''" href={{selectedProject.deploymentUrl}} target="_blank">
-        <h1 class="text3">{{selectedProject.name}}</h1>
+      <a *ngIf="selectedProject?.deploymentUrl != ''" href={{selectedProject?.deploymentUrl}} target="_blank">
+        <h1 class="text3">{{selectedProject?.name}}</h1>
       </a>
-      <div *ngIf="selectedProject.deploymentUrl == ''" class="no-deployment">
+      <div *ngIf="selectedProject?.deploymentUrl == ''" class="no-deployment">
         <div class="no-deployment-popup">
           <p>(This project is not deployed)</p>
         </div>
-        <h1 class="text3">{{selectedProject.name}}</h1>
+        <h1 class="text3">{{selectedProject?.name}}</h1>
       </div>
-      <a href={{selectedProject.gitHubUrl}} target="_blank">
+      <a href={{selectedProject?.gitHubUrl}} target="_blank">
         <img class="github-repo-link" src="/assets/images/github-logo.png" alt="GitHub logo">
       </a>
       <br/>
       <strong class="text3">Description</strong>
       <p>
-        {{selectedProject.description}}
+        {{selectedProject?.description}}
       </p>
       <strong class="text3">Technologies Used</strong>
       <p>
-        {{selectedProject.technologies}}
+        {{selectedProject?.technologies}}
       </p>
-      <img *ngFor="let ss of selectedProject.screenshots" src="{{ss}}" class="screenshot" alt="A screenshot of the {{selectedProject.name}} application" />
+      <img *ngFor="let ss of selectedProject?.screenshots" src="{{ss}}" class="screenshot" alt="A screenshot of the {{selectedProject?.name}} application" />
     </div>
   </section>
 </div>

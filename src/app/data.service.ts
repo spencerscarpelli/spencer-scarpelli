@@ -11,7 +11,13 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class DataService {
 
-  constructor(private http: Http) { }
+  projects: Project[];
+  posts: BlogPost[];
+
+  constructor(private http: Http) {
+    this.projects = this.getProjects();
+    this.posts = this.getPosts();
+  }
 
   getTopics() {
     return APPTOPICS;
@@ -31,12 +37,18 @@ export class DataService {
   }
 
   getPosts() {
+    let posts = [];
+
     this.http.get('http://localhost:8080/posts')
-      .map(response => response.json());
+      .subscribe(data => {
+        return data.json();
+      });
+
+    return posts;
   }
 
   createProjectObject(json) {
-    var p = new Project();
+    let p = new Project();
     let screenShots = json.screenshots.split(', ');
 
     p.id = json.id;
@@ -53,5 +65,18 @@ export class DataService {
 
     return p;
   }
+
+  // createPostObject(json) {
+  //   var b = new BlogPost();
+  //   let screenShots = json.screenshots.sblit(', ');
+  //
+  //   b.id = json.id;
+  //   b.date = json.name;
+  //   b.category = json.describtion;
+  //   b.title = json.technologies;
+  //   b.content = json.content;
+  //
+  //   return b;
+  // }
 
 }
