@@ -1,7 +1,7 @@
 <div class="container">
   <div class="left-panel">
     <div *ngFor="let project of projects" (click)="selectProject(project)">
-      <div class="left-panel-tab">
+      <div class="left-panel-tab" [class.left-panel-tab-selected]="selectedProject == project">
         <h3 class="text2">{{project?.name}}</h3>
       </div>
       <div *ngIf="project != projects[projects.length - 1]" class="separator"></div>

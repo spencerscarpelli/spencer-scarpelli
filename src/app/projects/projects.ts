@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
   {
     id: 3,
     name: 'Angular Shopping Cart',
-    description: 'An AngularJS 1 exercise (I have since moved on to Angular 2), the goal was to build a single-page shopping cart application with a shared service across components. Users can use filter/search options to find the desired product, then add a certain quantity to their shopping bag and proceed to the checkout view, which displays the order total and each item with quantity and subtotal. They can then remove or edit the quantity of each item in their shopping cart.',
+    description: 'An AngularJS 1 exercise, the goal was to build a single-page shopping cart application with a shared service across components. Users can use filter/search options to find the desired product, then add a certain quantity to their shopping bag and proceed to the checkout view, which displays the order total and each item with quantity and subtotal. They can then remove or edit the quantity of each item in their shopping cart.',
     technologies: 'JavaScript, Angular, JSON, HTML, CSS',
     screenshots: [
       '/assets/images/shopping-cart-1.png',
@@ -74,7 +74,7 @@ export const PROJECTS: Project[] = [
   {
     id: 6,
     name: 'scarp.io',
-    description: 'Yes, this website! Very meta. In addition to showcasing some projects and hosting blog posts, I figured it would be good to work with Angular 2 and build a site from scratch. I will also build the "engine" for blogging and posting additional projects, so that I can conveniently add content and it will populate my database for this website to pull from. I could of course use something like Wordpress, but I\'ll enjoy the process of building the engine myself, linking the database to the applications, and scaling it to my needs.',
+    description: 'Yes, this website! Very meta. It\'s a work in progress, and probably always will be. In addition to showcasing some projects and hosting blog posts, I figured it would be good to work with Angular 2 and learn some new stuff.',
     technologies: 'Angular, Angular CLI, TypeScript, SVG, HTML, CSS',
     screenshots: [
       '/assets/images/ss-1.png'

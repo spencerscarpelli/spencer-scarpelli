@@ -1,7 +1,7 @@
 <div class="container">
   <div class="left-panel">
     <div *ngFor="let cat of categories" (click)="selectCategory(cat)">
-      <div class="left-panel-tab">
+      <div class="left-panel-tab" [class.left-panel-tab-selected]="selectedCategory == cat">
         <h3 class="text2">{{cat}}</h3>
       </div>
       <div *ngIf="cat != categories[categories.length - 1]" class="separator"></div>

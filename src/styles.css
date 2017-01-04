@@ -41,6 +41,16 @@ h4 {
 
 .left-panel-tab:hover {
   background-color: #E5DFE4;
+  cursor: pointer;
+}
+
+.left-panel-tab > h3 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.left-panel-tab-selected {
+  background-color: rgba(229,223,228,.5);
 }
 
 .display-section {
@@ -63,15 +73,6 @@ h4 {
 
 .display-detail > p {
   margin-top: 5px;
-}
-
-.left-panel-tab > h3 {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 1.5px;
-}
-
-.left-panel-tab:hover {
-  cursor: pointer;
 }
 
 .banner {

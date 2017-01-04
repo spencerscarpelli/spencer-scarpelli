@@ -24,47 +24,57 @@ export class DataService {
   }
 
   getProjects() {
-    let projects = [];
+    return PROJECTS;
 
-    this.http.get('http://localhost:8080/projects')
-      .subscribe(data => {
-        data.json().forEach(project => {
-          projects.push(this.createProjectObject(project));
-        });
-      });
+    // the commented code below is for fetching from an api
 
-    return projects;
+    // let projects = [];
+
+    // this.http.get('http://localhost:8080/projects')
+    //   .subscribe(data => {
+    //     data.json().forEach(project => {
+    //       projects.push(this.createProjectObject(project));
+    //     });
+    //   });
+
+    // return projects;
   }
 
   getPosts() {
-    let posts = [];
+    return BLOGPOSTS;
 
-    this.http.get('http://localhost:8080/posts')
-      .subscribe(data => {
-        return data.json();
-      });
+    // the commented code below is for fetching from an api
 
-    return posts;
+    // let posts = [];
+    //
+    // this.http.get('http://localhost:8080/posts')
+    //   .subscribe(data => {
+    //     data.json().forEach(post => {
+    //       posts.push(post);
+    //     });
+    //   });
+    //
+    // return posts;
   }
 
-  createProjectObject(json) {
-    let p = new Project();
-    let screenShots = json.screenshots.split(', ');
-
-    p.id = json.id;
-    p.name = json.name;
-    p.description = json.description;
-    p.technologies = json.technologies;
-    p.screenshots = [];
-    p.gitHubUrl = json.github_url;
-    p.deploymentUrl = json.deployment_url;
-
-    screenShots.forEach(x => {
-      p.screenshots.push('/assets/images/' + x);
-    });
-
-    return p;
-  }
+  // createProjectObject(json) {
+  //   let p = new Project();
+  //   let screenShots = json.screenshots.split(', ');
+  //
+  //   p.id = json.id;
+  //   p.name = json.name;
+  //   p.description = json.description;
+  //   p.technologies = json.technologies;
+  //   p.screenshots = [];
+  //   p.gitHubUrl = json.github_url;
+  //   p.deploymentUrl = json.deployment_url;
+  //
+  //   screenShots.forEach(x => {
+  //     p.screenshots.push('/assets/images/' + x);
+  //   });
+  //
+  //   return p;
+  // }
 
   // createPostObject(json) {
   //   var b = new BlogPost();

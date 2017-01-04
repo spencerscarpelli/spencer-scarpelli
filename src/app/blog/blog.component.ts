@@ -16,7 +16,9 @@ export class BlogComponent implements OnInit {
 
   ngOnInit() {
     this.blogPosts = this.dataService.posts;
-    this.selectedCategory = 'All';
+    setTimeout(() => {
+      this.selectedCategory = 'All';
+    }, 100);
   }
 
   selectCategory(category) {
